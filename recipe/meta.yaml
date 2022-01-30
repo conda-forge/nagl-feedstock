@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SimonBoothroyd/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 1e78b44a0d04e83a9bfd1b2e1322cb4bf41f324e11baf81ee37df6172dcbdeb3
+  sha256: f6812d91a664438daaa0b68392c1ab36af5e36dc82e9d7ad343fadd694e51fac
 
 build:
   noarch: python
