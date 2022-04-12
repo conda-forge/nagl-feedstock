@@ -1,5 +1,5 @@
 {% set name = "nagl" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SimonBoothroyd/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f1aa3c0ec2110fb9ef2f13d51ff2f4ad920723bdcc3f5bde8c1099365ef77412
+  sha256: d6fb8341c270e0affc9dc9c6ee1f0afca82042561cdbc707a6d803637f6aaf0f
 
 build:
   noarch: python
