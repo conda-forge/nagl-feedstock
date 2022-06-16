@@ -1,5 +1,5 @@
 {% set name = "nagl" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SimonBoothroyd/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: d6fb8341c270e0affc9dc9c6ee1f0afca82042561cdbc707a6d803637f6aaf0f
+  sha256: 1a6c9450091b5485997695e7ba67205d1bda5560376bf572d6021991eaf8c008
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - openff-utilities
+    - openff-utilities >=0.1.5
     - pydantic
     - click
     - click-option-group
