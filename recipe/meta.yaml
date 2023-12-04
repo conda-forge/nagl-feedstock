@@ -1,5 +1,5 @@
 {% set name = "nagl" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SimonBoothroyd/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 1a6c9450091b5485997695e7ba67205d1bda5560376bf572d6021991eaf8c008
+  sha256: 5d5dd333f709cc0e4d5a254c1e4ae2f0bc112df709dcb86d303b1d67a490ef2c
 
 build:
   noarch: python
@@ -20,15 +20,26 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - versioneer
   run:
     - python >=3.8
-    - openff-utilities >=0.1.5
     - pydantic
+    - jinja2
+    - openssl
+    - rich
+
+    - rdkit
+
     - click
     - click-option-group
+
     - pytorch
-    - tqdm
-    - sqlalchemy
+    - pytorch-lightning
+
+    - dgl >=0.7
+
+    - pyarrow
+    - mlflow
 
 test:
   imports:
