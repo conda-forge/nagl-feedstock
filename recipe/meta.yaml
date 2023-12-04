@@ -20,16 +20,26 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - versioneer
   run:
     - python >=3.8
-    - openff-utilities >=0.1.5
     - pydantic
+    - jinja2
+    - openssl
+    - rich
+
+    - rdkit
+
     - click
     - click-option-group
+
     - pytorch
-    - tqdm
-    - sqlalchemy
-    - dgl
+    - pytorch-lightning
+
+    - dgl >=0.7
+
+    - pyarrow
+    - mlflow
 
 test:
   imports:
